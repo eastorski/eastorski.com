@@ -69,7 +69,14 @@ h2 {
 }
 
 p {
-  margin: 12px 0;
+  margin: 25px 0;
+  text-align: justify;
+}
+
+@media (max-width: 680px) {
+  p {
+    text-align: left;
+  }
 }
 
 .education-details {
@@ -78,13 +85,13 @@ p {
 }
 
 a {
-  color: inherit;
+  color: #c3251d;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
 
 a:hover {
-  color: var(--muted);
+  color: #991d17;
 }
 
 .links {
