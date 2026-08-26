@@ -69,6 +69,11 @@ p {
   margin: 12px 0;
 }
 
+.education-details {
+  color: var(--muted);
+  font-size: 0.9em;
+}
+
 a {
   color: inherit;
   text-decoration-thickness: 1px;
