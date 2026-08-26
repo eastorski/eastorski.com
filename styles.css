@@ -62,9 +62,9 @@ section {
 
 h2 {
   margin-bottom: 16px;
-  font-size: 1rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
   color: var(--muted);
 }
 
