@@ -30,7 +30,7 @@ main {
   min-height: 100vh;
   margin: 0 auto;
   padding: 100px 84px;
-  background: var(--surface);
+  background-color: #fff;
   box-shadow:
     -50px 0 var(--surface),
     50px 0 var(--surface);
