@@ -73,6 +73,10 @@ p {
   text-align: justify;
 }
 
+.about-text {
+  margin: 8px 0;
+}
+
 @media (max-width: 680px) {
   p {
     text-align: left;
@@ -80,8 +84,29 @@ p {
 }
 
 .education-details {
+  display: inline-block;
+  margin-top: 4px;
   color: var(--muted);
   font-size: 0.9em;
+}
+
+.contribution-title {
+  font-weight: 600;
+}
+
+.contribution-details {
+  display: inline-block;
+  margin-top: 4px;
+  color: #000000;
+  font-size: 0.9em;
+}
+
+.contribution-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin-top: -8px;
+  font-size: 0.8rem;
 }
 
 a {
