@@ -1,18 +1,10 @@
 :root {
-  color-scheme: light dark;
-  --bg: #fafafa;
+  color-scheme: light;
+  --bg: #f2f2f2;
+  --surface: #fff;
   --fg: #171717;
   --muted: #737373;
   --border: #e5e5e5;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #111;
-    --fg: #eee;
-    --muted: #999;
-    --border: #333;
-  }
 }
 
 * {
@@ -34,9 +26,17 @@ body {
 }
 
 main {
-  max-width: 680px;
+  max-width: 800px;
+  min-height: 100vh;
   margin: 0 auto;
-  padding: 100px 24px;
+  padding: 100px 84px;
+  background: var(--surface);
+}
+
+@media (max-width: 680px) {
+  main {
+    padding: 64px 24px;
+  }
 }
 
 h1 {
