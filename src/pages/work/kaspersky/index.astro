@@ -4,5 +4,40 @@ import Layout from '../../../layouts/Layout.astro';
 
 <Layout title="Kaspersky — Nikita Ostroukhov" description="Nikita Ostroukhov’s work at Kaspersky.">
   <header><h1>Kaspersky</h1><p class="subtitle">Identity and access management and incident response systems.</p></header>
+  <section>
+    <p>
+      From 2021 to 2022, I worked at <a href="https://kaspersky.ru/">Kaspersky</a> as a Senior Software Engineer,
+      developing internal infrastructure for identity and access management
+      and incident response automation.
+    </p>
+    <p>
+      I joined with several years of production Go experience at a time when
+      Go adoption within the company was still relatively early, and contributed
+      to establishing engineering practices around the language alongside my
+      product work.
+    </p>
+    <p>
+      My work focused on two systems: an in-house <a href="https://support.kaspersky.ru/ksc/15.1/221048">IAM</a> platform based on OAuth 2.0
+      and OpenID Connect, and an incident response platform built around Temporal
+      workflow orchestration.
+    </p>
+  </section>
+
+  <section class="contributions">
+    <h2>Selected work</h2>
+    <p>
+      <span class="contribution-title">Identity and Access Management</span><br />
+      <span class="contribution-details">→ Designed and implemented Kaspersky’s in-house IAM system, partially based on a fork of ORY Hydra, with substantial protocol modifications while remaining compliant with OAuth 2.0 and OpenID Connect.</span>
+    </p>
+    <p>
+      <span class="contribution-title">Incident Response</span><br />
+      <span class="contribution-details">→ Developed an incident response platform based on Temporal workflow orchestration, including a custom-designed DSL for defining and executing response workflows.</span>
+    </p>
+    <p>
+      <span class="contribution-title">Go Engineering Practices</span><br />
+      <span class="contribution-details">→ Helped establish Go engineering practices within the company, including coding standards, interview tasks, shared internal libraries, and development conventions.</span>
+    </p>
+  </section>
+
   <p><a href="/">← Back to home</a></p>
 </Layout>
