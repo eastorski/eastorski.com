@@ -59,7 +59,7 @@ p {
   text-align: justify;
 }
 
-.about-text { margin: 8px 0; }
+.about-text { margin: 14px 0; }
 
 @media (max-width: 680px) {
   p { text-align: left; }
