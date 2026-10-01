@@ -3,6 +3,38 @@ import Layout from '../../../layouts/Layout.astro';
 ---
 
 <Layout title="Digital Ruble — Nikita Ostroukhov" description="Nikita Ostroukhov’s work on the Digital Ruble infrastructure.">
-  <header><h1>Digital Ruble</h1><p class="subtitle">Took part in the development of the Digital Ruble infrastructure.</p></header>
+  <header><h1>Digital Ruble</h1><p class="subtitle">Took part in the development of the Digital Ruble infrastructure for EAEU.</p></header>
+  <section>
+    <p>
+      From 2017 to 2019, I worked at TakeWing on an early implementation of a
+      digital currency for the Eurasian Economic Union (EAEU), an initiative
+      promoted by <a href="https://en.wikipedia.org/wiki/Sergey_Glazyev">Sergey Glazyev</a>, then adviser to the President of Russia on
+      Eurasian integration.
+    </p>
+    <p>
+      The project <a href="https://tass.ru/ekonomika/5229769">aimed</a> to create an autonomous cross-border settlement system
+      for participating states, providing transaction confidentiality through
+      zero-knowledge cryptography: the network could verify transactions without
+      revealing who transferred funds to whom or in what amount. The broader
+      goal was to establish a settlement infrastructure that could continue
+      operating independently of external financial systems and remain resilient
+      to foreign sanctions.
+    </p>
+    <p>
+      The project was discontinued in 2019 for reasons unrelated to its technical development.
+    </p>
+  </section>
+  <section class="contributions">
+    <h2>Selected work</h2>
+    <p>
+      <span class="contribution-title">Ethereum / Geth</span><br />
+      <span class="contribution-details">→ Worked on an independent fork of <a href="https://github.com/ethereum/go-ethereum">Geth</a> with a modified consensus mechanism and integrated system smart contracts providing protocol-level functionality, including support for zero-knowledge transactions.</span>
+    </p>
+    <p>
+      <span class="contribution-title">Smart Contracts</span><br />
+      <span class="contribution-details">→ Designed system-level smart contracts implementing counterparty pre-filtering, consensus modifications, and other protocol features defining the currency’s behavior.</span>
+    </p>
+  </section>
+
   <p><a href="/">← Back to home</a></p>
 </Layout>
