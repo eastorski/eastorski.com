@@ -49,7 +49,7 @@ const photo = {
   <section aria-labelledby="course-materials-heading">
     <h2 id="course-materials-heading">Course materials</h2>
     <p>Selected lecture slides from the course:</p>
-    <div>
+    <div class="course-material-links">
       <p><a href="/docs/oop-intro.pdf">Introduction to the Course ↗</a></p>
       <p><a href="/docs/oop-functions.pdf">From Code Style to Functions ↗</a></p>
       <p><a href="/docs/oop-pointers.pdf">Movement, Memory and Pointers ↗</a></p>
@@ -67,6 +67,10 @@ const photo = {
 </Layout>
 
 <style>
+  .course-material-links > p {
+    margin-block: 6.25px;
+  }
+
   .course-main-idea {
     color: #c3251d;
     font-weight: 700;
