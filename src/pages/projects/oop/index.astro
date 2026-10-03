@@ -1,8 +1,92 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+
+const photo = {
+  src: '/images/oop.jpg',
+  alt: 'MIPT programming lecture showing a lecturer and diagrams of linked lists and memory addresses.',
+  caption: 'From a recorded lecture on data structures and memory management',
+};
 ---
 
 <Layout title="Object-Oriented Programming at MIPT — Nikita Ostroukhov" description="Nikita Ostroukhov’s Object-Oriented Programming course at MIPT.">
   <header><h1>Object-Oriented Programming at MIPT</h1><p class="subtitle">Designed and taught an annual programming course for second-year students. 80+ students over four years.</p></header>
+  <section>
+    <p>
+      I became involved in teaching early in my time at MIPT, first as a mentor
+      at <a href="https://miptstream.ru/2015/08/16/tehnotrek-obrazovatelnyiy-proekt-mail-ru-group-i-mfti/">TechnoTrack</a>, a joint programme by Mail.Ru Group and MIPT,
+      and later teaching school students at MIPT’s Evening School. This eventually led me to teaching my own C++ and
+      object-oriented programming course for second-year students.
+    </p>
+    <p>
+      I have never been particularly fond of programming contests and tests as
+      a way of learning software development. After my first year of teaching,
+      I began rebuilding the course around project work instead. 
+    </p>
+    <p>
+      During the first semester, students learned C++ by building games directly.
+      In the second, they revisited the same problems by designing reusable game,
+      graphics and physics engines. Code that had previously been scattered
+      throughout a game could now be expressed through much smaller and clearer
+      programs built on top of those abstractions.
+    </p>
+    <p>
+      <strong class="course-main-idea">The main idea of the course was one constraint</strong>: students could not use their own
+      engines for the final games. Teams exchanged them. This made interfaces
+      and design decisions matter to somebody other than their authors, while
+      giving students experience integrating unfamiliar code and dealing with
+      the practical relationship between a software developer and their users.
+    </p>
+    <figure>
+      {photo.src ? (
+        <img src={photo.src} alt={photo.alt} loading="lazy" />
+      ) : (
+        <div class="photo-placeholder">Photo coming soon</div>
+      )}
+      {photo.caption && <figcaption>{photo.caption}</figcaption>}
+    </figure>
+  </section>
+
+  <section aria-labelledby="course-materials-heading">
+    <h2 id="course-materials-heading">Course materials</h2>
+    <p>Selected lecture slides from the course:</p>
+  </section>
+
   <p><a href="/">← Back to home</a></p>
 </Layout>
+
+<style>
+  .course-main-idea {
+    color: #c3251d;
+    font-weight: 700;
+    text-underline-offset: 3px;
+  }
+
+  figure { margin: 0; }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .photo-placeholder {
+    display: grid;
+    place-items: center;
+    aspect-ratio: 4 / 3;
+    background: var(--bg);
+    border: 1px dashed var(--border);
+    color: var(--muted);
+  }
+
+  figcaption {
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 12px;
+    color: var(--muted);
+    font-size: 0.9rem;
+    text-align: right;
+  }
+</style>
